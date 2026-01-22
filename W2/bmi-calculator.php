@@ -17,6 +17,7 @@
 <?php 
 if ($_SERVER['REQUEST_METHOD']=="POST"){
 
+$bmi=null;
 $height=$_POST['heightVal'];
 $weight=$_POST['weightVal'];
 
@@ -24,6 +25,8 @@ $bmi = $weight/($height*$height);
 
 }
 ?>
+
+
 
 
 <?php
