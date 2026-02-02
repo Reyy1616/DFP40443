@@ -1,0 +1,39 @@
+
+<html>
+
+<head>
+</head>
+<body>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<label>Height</label>
+<input name="heightVal">
+<label>Weight</label>
+<input name="weightVal">
+<input type="submit"value="Calculate">
+</form>
+</body>
+
+
+<?php 
+if ($_SERVER['REQUEST_METHOD']=="POST"){
+
+$bmi=null;
+$height=$_POST['heightVal'];
+$weight=$_POST['weightVal'];
+
+$bmi = $weight/($height*$height);
+
+}
+?>
+
+
+
+
+<?php
+
+echo $bmi;
+
+?>
+
+
+</html>
