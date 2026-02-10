@@ -5,7 +5,7 @@
 
 <body>
     <header>
-        <h1>API Alumni</h1>
+        <h1>RPI Alumni</h1>
         <nav>
 <a href="">Events</a>
 <a href="">Chapter & Group</a>
