@@ -4,7 +4,7 @@ require_once "config/app_config.php";
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "SELECT user.id, user.username, user.password, roles.name  FROM user JOIN roles ON roles.id = user.roleid WHERE user.username=?";
+$sql = "SELECT users.id, users.username, users.password, roles.name  FROM users JOIN roles ON roles.id = users.role_id WHERE users.username=?";
 
 $stmt = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt, "s", $username);

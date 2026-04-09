@@ -1,5 +1,5 @@
 <?php
-
+require_once('config/app_config.php');
 $loggedIn= isset($_SESSION['username']);
 ?>
 <!DOCTYPE html>
